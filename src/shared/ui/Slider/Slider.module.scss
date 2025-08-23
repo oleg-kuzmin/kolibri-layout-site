@@ -1,0 +1,8 @@
+@use '@/shared/mixins' as *;
+
+.slider {
+  &__swiper {
+    width: 100%;
+    height: 100%;
+  }
+}

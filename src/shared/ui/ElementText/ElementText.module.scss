@@ -1,0 +1,10 @@
+@use '@/shared/mixins' as *;
+
+.elementText {
+  white-space: pre-wrap;
+  @include font-medium(14px, 135%);
+
+  @include media-desktop {
+    @include font-medium(16px, 131%);
+  }
+}

@@ -1,0 +1,8 @@
+@use '@/shared/mixins' as *;
+
+.dateArticle {
+  @include font-regular(12px);
+  @include media-desktop {
+    @include font-regular(14px);
+  }
+}

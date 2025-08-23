@@ -1,0 +1,1 @@
+export { TrendTitle } from './TrendTitle';

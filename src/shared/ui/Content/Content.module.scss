@@ -1,0 +1,11 @@
+@use '@/shared/mixins' as *;
+
+.content {
+  width: calc(100% - 30px);
+  max-width: 1300px;
+  margin: 0 auto;
+
+  @include media-desktop {
+    width: calc(100% - 140px);
+  }
+}

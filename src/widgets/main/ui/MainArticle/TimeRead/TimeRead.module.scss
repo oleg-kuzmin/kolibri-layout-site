@@ -1,0 +1,23 @@
+@use '@/shared/mixins' as *;
+
+.timeRead {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  &__icon {
+    width: 10px;
+    height: 10px;
+    background-image: url('/icons/subtract.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    @include font-regular(12px);
+    @include media-desktop {
+      @include font-regular(14px);
+    }
+  }
+}

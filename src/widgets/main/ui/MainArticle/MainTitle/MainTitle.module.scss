@@ -1,0 +1,8 @@
+@use '@/shared/mixins' as *;
+
+.mainTitle {
+  @include font-medium(36px, 117%, -0.01em);
+  @include media-desktop {
+    @include font-medium(46px, 124%, -0.01em);
+  }
+}

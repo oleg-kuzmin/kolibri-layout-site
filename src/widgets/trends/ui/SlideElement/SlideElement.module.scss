@@ -1,0 +1,36 @@
+@use '@/shared/mixins' as *;
+
+.slideElement {
+  width: 255px;
+  @include media-desktop {
+    width: 400px;
+  }
+
+  &__image {
+    margin-bottom: 20px;
+    @include media-desktop {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    @include media-desktop {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__contentTitle {
+    margin-right: 9px;
+    @include media-desktop {
+      margin-right: 15px;
+    }
+  }
+
+  &__viewCounter {
+    margin-left: auto;
+    gap: 10px;
+  }
+}

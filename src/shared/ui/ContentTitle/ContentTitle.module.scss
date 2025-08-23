@@ -1,0 +1,10 @@
+@use '@/shared/mixins' as *;
+
+.contentTitle {
+  text-transform: uppercase;
+  @include font-semibold(11px, 120%, 0.02em);
+
+  @include media-desktop {
+    @include font-semibold(13px, 120%, 0.03em);
+  }
+}

@@ -1,0 +1,6 @@
+@mixin effect-focus-outline {
+  &:focus-visible {
+    border-radius: 5px;
+    outline: var(--color-focus) 2px solid;
+  }
+}

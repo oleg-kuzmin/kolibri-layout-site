@@ -1,0 +1,13 @@
+@use '@/shared/mixins' as *;
+
+.articleImage {
+  width: 165px;
+  height: 110px;
+  object-fit: cover;
+  vertical-align: top;
+
+  @include media-desktop {
+    width: 175px;
+    height: 117px;
+  }
+}

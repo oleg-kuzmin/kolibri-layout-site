@@ -1,0 +1,26 @@
+@mixin font-regular($_size, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: $_size;
+  line-height: $_lineHeight;
+  font-family: var(--font-main);
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-medium($_size, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: $_size;
+  line-height: $_lineHeight;
+  font-family: var(--font-main);
+  letter-spacing: $_letterSpacing;
+}
+
+@mixin font-semibold($_size, $_lineHeight: 1, $_letterSpacing: normal) {
+  font-style: normal;
+  font-weight: 600;
+  font-size: $_size;
+  line-height: $_lineHeight;
+  font-family: var(--font-main);
+  letter-spacing: $_letterSpacing;
+}

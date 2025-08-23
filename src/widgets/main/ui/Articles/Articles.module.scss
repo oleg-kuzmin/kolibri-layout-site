@@ -1,0 +1,30 @@
+@use '@/shared/mixins' as *;
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 39px;
+  @include media-tablet {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  @include media-desktop {
+    padding: 31px 25px 21px;
+  }
+
+  &__contentTitle {
+    margin-bottom: 20px;
+    @include media-desktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 15px;
+    @include media-desktop {
+      gap: 25px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use '@/shared/mixins' as *;
+
+.newsElement {
+  display: flex;
+  gap: 15px;
+  @include media-desktop {
+    gap: 21px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    @include media-desktop {
+      gap: 11px;
+    }
+  }
+}

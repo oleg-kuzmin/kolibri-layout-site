@@ -1,0 +1,12 @@
+@use '@/shared/mixins' as *;
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 330px;
+  object-fit: cover;
+  vertical-align: top;
+  @include media-tablet {
+    max-width: 625px;
+  }
+}

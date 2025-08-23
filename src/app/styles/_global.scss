@@ -1,0 +1,81 @@
+@use '@/shared/mixins' as *;
+
+:root {
+  // Colors
+  --color-white: #fff;
+  --color-black: #1e1e1e;
+  --color-focus: #4295e4;
+  --color-avatar-bg: #f3f3f3;
+
+  // scrollbar
+  --color-scrollbar: var(--color-focus);
+  --color-track: rgba(255, 255, 255, 0.1);
+
+  // Fonts
+  --font-main: 'SF Pro Display';
+  --font-fallback: 'Helvetica', 'Arial', sans-serif;
+
+  // Time
+  --time-hover-main: 200ms;
+  --time-slide-opacity: 500ms;
+
+  // Smoothing
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 2560px;
+  margin: 0 auto;
+  color: var(--color-black);
+  font-family: var(--font-main), var(--font-fallback);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--color-scrollbar) var(--color-track);
+  scrollbar-width: thin;
+  touch-action: manipulation;
+}
+
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--color-track);
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: var(--color-main);
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}

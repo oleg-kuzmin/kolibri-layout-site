@@ -1,0 +1,40 @@
+@use '@/shared/mixins' as *;
+
+.latestNews {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  border-bottom: 2px solid rgba($color: #1e1e1e, $alpha: 0.8);
+  @include media-tablet {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  @include media-desktop {
+    padding: 31px 23px 21px 25px;
+    border-right: 2px solid rgba($color: #1e1e1e, $alpha: 0.8);
+    border-bottom: none;
+  }
+
+  &__contentTitle {
+    margin-bottom: 20px;
+    @include media-desktop {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include media-desktop {
+      gap: 30px;
+    }
+  }
+
+  &__news3 {
+    display: none;
+    @include media-desktop {
+      display: flex;
+    }
+  }
+}

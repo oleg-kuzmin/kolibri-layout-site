@@ -1,0 +1,8 @@
+@use '@/shared/mixins' as *;
+
+.trendTitle {
+  @include font-medium(20px, 140%, -0.01em);
+  @include media-desktop {
+    @include font-medium(26px, 131%, -0.01em);
+  }
+}

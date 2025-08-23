@@ -1,0 +1,28 @@
+@use '@/shared/mixins' as *;
+
+.viewCounter {
+  display: flex;
+  align-items: center;
+  height: 18px;
+  gap: 5px;
+  @include media-desktop {
+    height: 21px;
+    gap: 10px;
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+    background-image: url('/icons/eye.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    @include font-regular(12px);
+    @include media-desktop {
+      @include font-regular(14px);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use '@/shared/mixins' as *;
+
+.articleElement {
+  display: flex;
+  flex-direction: column;
+  width: 165px;
+  @include media-desktop {
+    width: 175px;
+  }
+
+  &__image {
+    margin-bottom: 10px;
+    @include media-desktop {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    @include media-desktop {
+      margin-bottom: 6px;
+    }
+  }
+}

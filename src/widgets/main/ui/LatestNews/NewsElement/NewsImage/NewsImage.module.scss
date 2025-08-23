@@ -1,0 +1,13 @@
+@use '@/shared/mixins' as *;
+
+.newsImage {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  vertical-align: top;
+
+  @include media-desktop {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,32 @@
+@use '@/shared/mixins' as *;
+
+.avatar {
+  display: flex;
+  align-items: center;
+  width: 124px;
+  height: 40px;
+  padding: 5px 15px 5px 5px;
+  gap: 10px;
+  border-radius: 47px;
+  background-color: var(--color-avatar-bg);
+  @include media-desktop {
+    width: 134px;
+  }
+
+  &__image {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image: url('/icons/avatar.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__name {
+    @include font-regular(12px);
+    @include media-desktop {
+      @include font-regular(14px);
+    }
+  }
+}
